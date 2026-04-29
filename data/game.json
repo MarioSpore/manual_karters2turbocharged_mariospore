@@ -1,0 +1,9 @@
+{
+  "game": "Karters2TurboCharged",
+  "creator": "MarioSpore",
+  "death_link": false,
+  "filler_item_name": "Bobby Token",
+  "starting_items": [
+    {"item_categories": ["Cups"], "random": 1}
+  ]
+}

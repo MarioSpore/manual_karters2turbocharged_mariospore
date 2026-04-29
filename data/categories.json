@@ -1,0 +1,16 @@
+{
+  "Power Ups": {"hidden": true},
+  "Challenges": {},
+  "Playground": {"hidden": true, "yaml_option": ["include_playground_challenges"]},
+  "Time Trials": {"yaml_option": ["include_time_trials"]},
+  "Elimination": {"yaml_option": ["include_elimination"]},
+  "Battle Arenas": {"yaml_option": ["include_arenas"]},
+  "CTR": {"yaml_option": ["include_ctr"]},
+  "CTTR": {"yaml_option": ["include_cttr"]},
+  "CTRNF": {"yaml_option": ["include_ctrnf"]},
+  "MKDD": {"yaml_option": ["include_mkdd"]},
+  "MKDS": {"yaml_option": ["include_mkds"]},
+  "SR": {"yaml_option": ["include_sr"]},
+  "LR": {"yaml_option": ["include_lr"]},
+  "Original Tracks": {"yaml_option": ["include_og"]}
+}
