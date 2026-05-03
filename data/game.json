@@ -4,6 +4,6 @@
   "death_link": false,
   "filler_item_name": "Bobby Token",
   "starting_items": [
-    {"item_categories": ["Cups"], "random": 1}
+    {"item_categories": ["Tracks"], "random": 4}
   ]
 }
