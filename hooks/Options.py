@@ -25,10 +25,32 @@ from typing import Type, Any
 # To add an option, use the before_options_defined hook below and something like this:
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
-class Playground(Toggle):
-    """This removes Challenges #1, #2, and #13 Locations."""
-    display_name = "Exclude Tutorial Challenges?"
 
+class Goal(Choice):
+    """
+    Complete Final Challenge in Sunday Driver
+    - Find 5 Progressive Challenge Pages, Complete Challenge #21
+
+    Complete Final Challenge in Licensed Racer
+    - Find 9 Progressive Challenge Pages, Complete Challenge #41
+
+    Complete Final Challenge in Speed Freak
+    - Find 13 Progressive Challenge Pages, Complete Challenge #61
+
+    Complete Final Challenge in Karting Legend
+    - Find 17 Progressive Challenge Pages, Complete Challenge #81
+    """
+    display_name = "Goal"
+    option_sunday_driver = 0
+    option_licensed_racer = 1
+    option_speed_freak = 2
+    option_karting_legend = 3
+    default = 1
+    
+# class Playground(Toggle):
+#     """This removes Challenges #1, #2, and #13 Locations."""
+#     display_name = "Exclude Tutorial Challenges?"
+#
 class BattleArenas(Toggle):
     """This adds Arena related items/locations"""
     display_name = "Include Arena Locations?"
@@ -38,52 +60,52 @@ class TimeTrials(Toggle):
     display_name = "Include Time Trial Locations?"
 
 class Elimination(Toggle):
-    """This adds the Elimination Checks for each Track/Cup"""
+    """This adds the Elimination Checks for each Track"""
     display_name = "Include Elimination Locations?"
-
-class ArenaChallenges(Toggle):
-    """This adds the Arena challenges found in Challenges"""
-    display_name = "Include Arena Battles in Challenges?"
-
-class TimeTrialChallenges(Toggle):
-    """This adds the Time Trial challenges found in Challenges"""
-    display_name = "Include Time Trials in Challenges?"
-
-class EliminationChallenges(Toggle):
-    """This adds the Elimination Race challenges found in Challenges"""
-    display_name = "Include Elimination Races in Challenges?"
-
-class CTR99(Toggle):
-    """This adds all CTR related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
-    display_name = "Include Crash Team Racing Tracks?"
-
-class CTTR(Toggle):
-    """This adds all CTTR related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
-    display_name = "Include Crash Tag Team Racing Tracks?"
-
-class CTRNF(Toggle):
-    """This adds all CTR:NF related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
-    display_name = "Include Crash Team Racing: Nitro-Fueled Tracks?"
-
-class MKDD(Toggle):
-    """This adds all MKDD related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
-    display_name = "Include Mario Kart: Double Dash!! Tracks?"
-
-class MKDS(Toggle):
-    """This adds all MKDS related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
-    display_name = "Include Mario Kart DS Tracks?"
-
-class SR(Toggle):
-    """This adds all Sonic Riders related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
-    display_name = "Include Sonic Riders Tracks?"
-
-class LR(Toggle):
-    """This adds all LEGO Racers related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
-    display_name = "Include LEGO Racers Tracks?"
-
-class OriginalTracks(Toggle):
-    """This adds all the Cups related to Original Tracks from the Steam Workshop. (Currently: Seren/KVBA)"""
-    display_name = "Include Original Tracks?"
+#
+# class ArenaChallenges(Toggle):
+#     """This adds the Arena challenges found in Challenges"""
+#     display_name = "Include Arena Battles in Challenges?"
+#
+# class TimeTrialChallenges(Toggle):
+#     """This adds the Time Trial challenges found in Challenges"""
+#     display_name = "Include Time Trials in Challenges?"
+#
+# class EliminationChallenges(Toggle):
+#     """This adds the Elimination Race challenges found in Challenges"""
+#     display_name = "Include Elimination Races in Challenges?"
+#
+# class CTR99(Toggle):
+#     """This adds all CTR related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
+#     display_name = "Include Crash Team Racing Tracks?"
+#
+# class CTTR(Toggle):
+#     """This adds all CTTR related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
+#     display_name = "Include Crash Tag Team Racing Tracks?"
+#
+# class CTRNF(Toggle):
+#     """This adds all CTR:NF related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
+#     display_name = "Include Crash Team Racing: Nitro-Fueled Tracks?"
+#
+# class MKDD(Toggle):
+#     """This adds all MKDD related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
+#     display_name = "Include Mario Kart: Double Dash!! Tracks?"
+#
+# class MKDS(Toggle):
+#     """This adds all MKDS related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
+#     display_name = "Include Mario Kart DS Tracks?"
+#
+# class SR(Toggle):
+#     """This adds all Sonic Riders related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
+#     display_name = "Include Sonic Riders Tracks?"
+#
+# class LR(Toggle):
+#     """This adds all LEGO Racers related items/locations to the pool. (Affected by Time Trial/Elimination Options)"""
+#     display_name = "Include LEGO Racers Tracks?"
+#
+# class OriginalTracks(Toggle):
+#     """This adds all the Cups related to Original Tracks from the Steam Workshop. (Currently: Seren/KVBA)"""
+#     display_name = "Include Original Tracks?"
 
 class Goal1(DefaultOnToggle):
     """Goal debug setting that disabled locations if goal1 is enabled"""
@@ -99,21 +121,22 @@ class Goal4(DefaultOnToggle):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
-    options["include_playground_challenges"] = Playground
+    options["goal"] = Goal
+    # options["include_playground_challenges"] = Playground
     options["include_arenas"] = BattleArenas
     options["include_time_trials"] = TimeTrials
     options["include_elimination"] = Elimination
-    options["include_arena_challenges"] = ArenaChallenges
-    options["include_time_trial_challenges"] = TimeTrialChallenges
-    options["include_elimination_challenges"] = EliminationChallenges
-    options["include_ctr99"] = CTR99
-    options["include_cttr"] = CTTR
-    options["include_ctrnf"] = CTRNF
-    options["include_mkdd"] = MKDD
-    options["include_mkds"] = MKDS
-    options["include_sr"] = SR
-    options["include_lr"] = LR
-    options["include_og"] = OriginalTracks
+    # options["include_time_trial_challenges"] = TimeTrialChallenges
+    # options["include_elimination_challenges"] = EliminationChallenges
+    # options["include_arena_challenges"] = ArenaChallenges
+    # options["include_ctr99"] = CTR99
+    # options["include_cttr"] = CTTR
+    # options["include_ctrnf"] = CTRNF
+    # options["include_mkdd"] = MKDD
+    # options["include_mkds"] = MKDS
+    # options["include_sr"] = SR
+    # options["include_lr"] = LR
+    # options["include_og"] = OriginalTracks
     options["goal1"] = Goal1
     options["goal2"] = Goal2
     options["goal3"] = Goal3
@@ -138,6 +161,8 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
 # Use this Hook if you want to add your Option to an Option group (existing or not)
 def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
     # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
+    # groups["Challenge Options"] = [Playground, TimeTrialChallenges, EliminationChallenges, ArenaChallenges]
+    # groups["Workshop Options"] = [CTR, CTTR, CTRNF, MKDD, MKDS, SR, LR, OriginalTracks]
     return groups
 
 def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:

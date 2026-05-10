@@ -1,0 +1,17 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.options.schema.json",
+  "user": {
+    "include_playground_challenges": {"display_name": "Exclude Tutorial Challenges?", "type": "Toggle", "default": false, "group": "Challenges Options", "description": ["This removes Challenges #1, #2, and #13 Locations."]},
+    "include_time_trial_challenges": {"display_name": "Include Time Trial Challenges?", "type": "Toggle", "default": false, "group": "Challenges Options", "description": ["This adds the Time Trial challenges found in Challenges"]},
+    "include_elimination_challenges": {"display_name": "Include Elimination Challenges?", "type": "Toggle", "default": false, "group": "Challenges Options", "description": ["This adds the Elimination Race challenges found in Challenges"]},
+    "include_arena_challenges": {"display_name": "Include Arena Battle Challenges?", "type": "Toggle", "default": false, "group": "Challenges Options", "description": ["This adds the Arena challenges found in Challenges"]},
+    "include_ctr99": {"display_name": "Include Crash Team Racing Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all CTR related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_cttr": {"display_name": "Include Crash Tag Team Racing Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all CTTR related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_ctrnf": {"display_name": "Include Crash Team Racing: Nitro Fueled Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all CTR:NF related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_mkdd": {"display_name": "Include Mario Kart: Double Dash!! Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all MKDD related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_mkds": {"display_name": "Include Mario Kart DS Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all MKDS related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_sr": {"display_name": "Include Sonic Riders Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all Sonic Riders related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_lr": {"display_name": "Include LEGO Racers Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all LEGO Racers related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_og": {"display_name": "Include Original Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all the Cups related to Original Tracks from the Steam Workshop. (Currently: Seren/KVBA)"]}
+  }
+}
