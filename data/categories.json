@@ -1,10 +1,11 @@
 {
-  "Playground": {"hidden": true, "yaml_option": ["include_playground_challenges"]},
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.categories.schema.json",
+  "Playground": {"yaml_option": ["include_playground_challenges"]},
   "Time Trials": {"yaml_option": ["include_time_trials"]},
   "Elimination": {"yaml_option": ["include_elimination"]},
-  "Time Trials Challenges": {"hidden": true, "yaml_option": ["inclue_time_trial_challenges"]},
-  "Elimination Challenges": {"hidden": true, "yaml_option": ["include_elimination_challenges"]},
-  "Arena Challenges": {"hidden": true, "yaml_option": ["include_arena_challenges"]},
+  "Time Trials Challenges": {"yaml_option": ["include_time_trial_challenges"]},
+  "Elimination Challenges": {"yaml_option": ["include_elimination_challenges"]},
+  "Battle Arena Challenges": {"yaml_option": ["include_arena_challenges"]},
   "Battle Arenas": {"yaml_option": ["include_arenas"]},
   "CTR99": {"yaml_option": ["include_ctr99"]},
   "CTTR": {"yaml_option": ["include_cttr"]},
@@ -13,5 +14,9 @@
   "MKDS": {"yaml_option": ["include_mkds"]},
   "SR": {"yaml_option": ["include_sr"]},
   "LR": {"yaml_option": ["include_lr"]},
-  "Original Tracks": {"yaml_option": ["include_og"]}
+  "Original Tracks": {"yaml_option": ["include_og"]},
+  "Goal4": {"hidden": true, "yaml_option": ["goal4"]},
+  "Goal3": {"hidden": true, "yaml_option": ["goal3"]},
+  "Goal2": {"hidden": true, "yaml_option": ["goal2"]},
+  "Goal1": {"hidden": true, "yaml_option": ["goal1"]}
 }

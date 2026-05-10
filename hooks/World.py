@@ -10,7 +10,7 @@ from ..Locations import ManualLocation
 # Raw JSON data from the Manual apworld, respectively:
 #          data/game.json, data/items.json, data/locations.json, data/regions.json
 #
-from ..Data import game_table, item_table, location_table, region_table
+from ..Data import game_table, item_table, location_table, region_table, category_table
 
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value, format_state_prog_items_key, ProgItemsCat, remove_specific_item
@@ -46,6 +46,15 @@ def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> 
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
+    if world.options.goal.value == 0:
+        world.options.goal2.value = False
+        world.options.goal3.value = False
+        world.options.goal4.value = False
+    if world.options.goal.value == 1:
+        world.options.goal3.value = False
+        world.options.goal4.value = False
+    if world.options.goal.value == 2:
+        world.options.goal4.value = False
     pass
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
@@ -89,6 +98,15 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     for itemName in itemNamesToRemove:
         item = next(i for i in item_pool if i.name == itemName)
         remove_specific_item(item_pool, item)
+
+    goal_location_name = world.victory_names[world.options.goal.value]
+    # if goal_location_name == "Complete Final Challenge in Sunday Driver":
+    if goal_location_name == "Complete Final Challenge in Licensed Racer":
+            item_pool += [world.create_item("Progressive Challenge Page") for _ in range(4)]
+    elif goal_location_name == "Complete Final Challenge in Speed Freak":
+            item_pool += [world.create_item("Progressive Challenge Page") for _ in range(8)]
+    elif goal_location_name == "Complete Final Challenge in Karting Legend":
+            item_pool += [world.create_item("Progressive Challenge Page") for _ in range(12)]
 
     return item_pool
 

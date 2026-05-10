@@ -1,8 +1,9 @@
 {
-  "game": "Karters2TurboCharged",
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
+  "game": "The Karters 2 Turbo Charged",
   "creator": "MarioSpore",
-  "death_link": false,
   "filler_item_name": "Bobby Token",
+  "death_link": false,
   "starting_items": [
     {"item_categories": ["Tracks"], "random": 4}
   ]
