@@ -26,26 +26,26 @@ from typing import Type, Any
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
 
-class Goal(Choice):
-    """
-    Complete Final Challenge in Sunday Driver
-    - Find 5 Progressive Challenge Pages, Complete Challenge #21
-
-    Complete Final Challenge in Licensed Racer
-    - Find 9 Progressive Challenge Pages, Complete Challenge #41
-
-    Complete Final Challenge in Speed Freak
-    - Find 13 Progressive Challenge Pages, Complete Challenge #61
-
-    Complete Final Challenge in Karting Legend
-    - Find 17 Progressive Challenge Pages, Complete Challenge #81
-    """
-    display_name = "Goal"
-    option_sunday_driver = 0
-    option_licensed_racer = 1
-    option_speed_freak = 2
-    option_karting_legend = 3
-    default = 1
+# class Goal(Choice):
+    # """
+    # Complete Final Challenge in Sunday Driver
+    # - Find 5 Progressive Challenge Pages, Complete Challenge #21
+    #
+    # Complete Final Challenge in Licensed Racer
+    # - Find 9 Progressive Challenge Pages, Complete Challenge #41
+    #
+    # Complete Final Challenge in Speed Freak
+    # - Find 13 Progressive Challenge Pages, Complete Challenge #61
+    #
+    # Complete Final Challenge in Karting Legend
+    # - Find 17 Progressive Challenge Pages, Complete Challenge #81
+    # """
+    # display_name = "Goal"
+    # option_sunday_driver = 0
+    # option_licensed_racer = 1
+    # option_speed_freak = 2
+    # option_karting_legend = 3
+    # default = 1
     
 # class Playground(Toggle):
 #     """This removes Challenges #1, #2, and #13 Locations."""
@@ -62,7 +62,7 @@ class TimeTrials(Toggle):
 class Elimination(Toggle):
     """This adds the Elimination Checks for each Track"""
     display_name = "Include Elimination Locations?"
-#
+
 # class ArenaChallenges(Toggle):
 #     """This adds the Arena challenges found in Challenges"""
 #     display_name = "Include Arena Battles in Challenges?"
@@ -121,7 +121,7 @@ class Goal4(DefaultOnToggle):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
-    options["goal"] = Goal
+    # options["goal"] = Goal
     # options["include_playground_challenges"] = Playground
     options["include_arenas"] = BattleArenas
     options["include_time_trials"] = TimeTrials
