@@ -179,6 +179,7 @@
     {"name": "TT - TK2 Urban Overdrive Cup - Terminal Velocity (2:30:00)", "category": ["Time Trials", "TK2"], "requires": "|Terminal Velocity (TK2)|"},
     {"name": "TT - TK2 Urban Overdrive Cup - Rush Hour (3:00:00)", "category": ["Time Trials", "TK2"], "requires": "|Rush Hour (TK2)|"},
     {"name": "TT - TK2 Urban Overdrive Cup - Don't Look Downtown (3:00:00)", "category": ["Time Trials", "TK2"], "requires": "|Don't Look Downtown (TK2)|"},
+    {"name": "Win all Karters 2 Cups", "category": ["Grand Prix", "TK2", "Victory"], "requires": "(|Scuba Driving (TK2)| AND |Beach Blast (TK2)| AND |Pablo's Jungle Jam (TK2)| AND |Molten Mile (TK2)|) AND (|Dry Dry Valley (TK2)| AND |Sheriff's Town Tour (TK2)| AND |Abandoned Roadway (TK2)| AND |Shiny Shroom (TK2)|) AND (|Timber Camp (TK2)| AND |Woodsy Lane (TK2)| AND |Gauntlet Run (TK2)| AND |Mythic Moonlight (TK2)|) AND (|Toxic Haste (TK2)| AND |Terminal Velocity (TK2)| AND |Rush Hour (TK2)| AND |Don't Look Downtown (TK2)|)", "victory": true},
     {"name": "GP - CTR Red Gem Cup (Perfect)", "category": ["Grand Prix", "CTR99"], "region": "Red Gem Cup (CTR99)"},
     {"name": "GP - CTR Red Gem Cup (1st)", "category": ["Grand Prix", "CTR99"], "region": "Red Gem Cup (CTR99)"},
     {"name": "Race - CTR99 Red Gem Cup - Crash Cove (1st)", "category": ["Race", "CTR99"], "requires": "|Crash Cove (CTR99)|"},
