@@ -10,8 +10,10 @@
     "include_ctrnf": {"display_name": "Include Crash Team Racing: Nitro Fueled Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all CTR:NF related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
     "include_mkdd": {"display_name": "Include Mario Kart: Double Dash!! Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all MKDD related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
     "include_mkds": {"display_name": "Include Mario Kart DS Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all MKDS related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_sonicr": {"display_name": "Include Sonic R Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all Sonic R related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
     "include_sr": {"display_name": "Include Sonic Riders Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all Sonic Riders related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
     "include_lr": {"display_name": "Include LEGO Racers Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all LEGO Racers related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
+    "include_spyro": {"display_name": "Include Spyro Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all Spyro related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
     "include_og": {"display_name": "Include Original Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all the Cups related to Original Tracks from the Steam Workshop. (Currently: Seren/KVBA)"]}
   }
 }
