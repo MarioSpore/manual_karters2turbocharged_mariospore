@@ -137,6 +137,18 @@
     {"name": "Lost Fleet (Spyro)", "category": ["Spyro", "Tracks"], "progression_skip_balancing": true},
     {"name": "Molten Crater (Spyro)", "category": ["Spyro", "Tracks"], "progression_skip_balancing": true},
     {"name": "Super Bonus Round (Spyro)", "category": ["Spyro", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Mothership (MadK)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Cyberspace (SRCW)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Drive-Thru Danger (CTRNF)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Rocket City Run (LEGO Racers)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Slide Coliseum (CTR99)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Spaceway (BK)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Radiant Emerald (Sonic R)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Velo's Challenge (CNKNG)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Turbo Track (CTR99)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Test_Circle (MKDS)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Test Track (LEGO Racers)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
+    {"name": "Dokan_Course (MKDS)", "category": ["Bonus", "Tracks"], "progression_skip_balancing": true},
     {"name": "Arena Battles", "category": ["Battle Arenas"], "progression_skip_balancing": true}
   ]
 }

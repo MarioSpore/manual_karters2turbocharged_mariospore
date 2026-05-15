@@ -35,6 +35,9 @@
   "Seren World Tour Cup": {"requires": "|Shipyard Circuit (Seren)| AND |Appleseed Ranch (Seren)| AND |Verdant Crossing (Seren)| AND |Snowspire Heights (Seren)|"},
   "Seren Tomorrowland Cup": {"requires": "|Starlight Storage (Seren)| AND |Nova Sector (Seren)| AND |Utopia (Seren)| AND |Dystopia (Seren)|"},
   "Seren Stonesword Cup": {"requires": "|Darkstone Keep (Seren)| AND |Ancient Citadel (Seren)| AND |The Goblin Cave (Seren)| AND |Obsidian Ruins (Seren)|"},
+  "Rocket Cup (Bonus)": {"requires": "|Mothership (MadK)| AND |Cyberspace (SRCW)| AND |Drive-Thru Danger (CTRNF)| AND |Rocket City Run (LEGO Racers)|"},
+  "Emperor Cup (Bonus)": {"requires": "|Slide Coliseum (CTR99)| AND |Spaceway (BK)| AND |Radiant Emerald (Sonic R)| AND |Velo's Challenge (CNKNG)|"},
+  "Test Cup (Bonus)": {"requires": "|Turbo Track (CTR99)| AND |Test_Circle (MKDS)| AND |Test Track (LEGO Racers)| AND |Dokan_Course (MKDS)|"},
   "Arena Mode": {"requires": "|Arena Battles|"},
   "Challenge Mode": {}
 }

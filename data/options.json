@@ -14,6 +14,7 @@
     "include_sr": {"display_name": "Include Sonic Riders Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all Sonic Riders related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
     "include_lr": {"display_name": "Include LEGO Racers Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all LEGO Racers related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
     "include_spyro": {"display_name": "Include Spyro Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all Spyro related items/locations to the pool. (Affected by Time Trial/Elimination Options)"]},
-    "include_og": {"display_name": "Include Original Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all the Cups related to Original Tracks from the Steam Workshop. (Currently: Seren/KVBA)"]}
+    "include_og": {"display_name": "Include Original Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds all the Cups related to Original Tracks from the Steam Workshop. (Currently: Seren/KVBA)"]},
+    "include_bonus": {"display_name": "Include Bonus Tracks?", "type": "Toggle", "default": false, "group": "Workshop Options", "description": ["This adds Tracks that do not belong to cup originally, but now have been placed into original cups just for TK2 Archipelago! (Example: Rocket City Run. Velo's Challenge, Drive-Thru Danger, Dokan_Course, and more!"]}
   }
 }

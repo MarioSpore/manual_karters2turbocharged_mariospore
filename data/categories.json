@@ -17,6 +17,7 @@
   "LR": {"yaml_option": ["include_lr"]},
   "Spyro": {"yaml_option": ["include_spyro"]},
   "Original Tracks": {"yaml_option": ["include_og"]},
+  "Bonus": {"yaml_option": ["include_bonus"]},
   "Goal4": {"hidden": true, "yaml_option": ["goal4"]},
   "Goal3": {"hidden": true, "yaml_option": ["goal3"]},
   "Goal2": {"hidden": true, "yaml_option": ["goal2"]},
